@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Monkey_Tower_Defence
 {
@@ -25,6 +26,24 @@ namespace Monkey_Tower_Defence
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblHighScore_Click(object sender, EventArgs e)
+        {
+            using (StreamReader currentfile = new StreamReader("highscore.txt"))
+            {
+                lblHighScore.Text = lblHighScore.Text + currentfile.ReadLine();
+            }
         }
     }
 }

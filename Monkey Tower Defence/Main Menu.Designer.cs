@@ -28,17 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MainTitle = new System.Windows.Forms.Label();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.lblHighScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // MainTitle
             // 
@@ -55,14 +49,64 @@
             this.MainTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MainTitle.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnStart
+            // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnStart.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.Location = new System.Drawing.Point(326, 208);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(157, 49);
+            this.btnStart.TabIndex = 2;
+            this.btnStart.Text = "Start Game";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(326, 336);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(157, 49);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit Game";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblHighScore
+            // 
+            this.lblHighScore.AutoSize = true;
+            this.lblHighScore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblHighScore.Location = new System.Drawing.Point(45, 113);
+            this.lblHighScore.Name = "lblHighScore";
+            this.lblHighScore.Size = new System.Drawing.Size(168, 28);
+            this.lblHighScore.TabIndex = 4;
+            this.lblHighScore.Text = "High Score: ";
+            this.lblHighScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblHighScore.Click += new System.EventHandler(this.lblHighScore_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHighScore);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.MainTitle);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -72,9 +116,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label MainTitle;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblHighScore;
     }
 }
 
