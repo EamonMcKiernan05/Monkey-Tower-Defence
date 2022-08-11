@@ -40,10 +40,25 @@ namespace Monkey_Tower_Defence
 
         private void lblHighScore_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void lblHighScore_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnhighscore_Click(object sender, EventArgs e)
+        {
             using (StreamReader currentfile = new StreamReader("highscore.txt"))
             {
                 lblHighScore.Text = lblHighScore.Text + currentfile.ReadLine();
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
