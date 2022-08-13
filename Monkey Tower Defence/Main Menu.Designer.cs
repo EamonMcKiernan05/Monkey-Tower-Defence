@@ -32,7 +32,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnhighscore = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblhighscore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MainTitle
@@ -104,22 +104,24 @@
             this.btnhighscore.UseVisualStyleBackColor = false;
             this.btnhighscore.Click += new System.EventHandler(this.btnhighscore_Click);
             // 
-            // label1
+            // lblhighscore
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 132);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.lblhighscore.AutoSize = true;
+            this.lblhighscore.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhighscore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblhighscore.Location = new System.Drawing.Point(46, 99);
+            this.lblhighscore.Name = "lblhighscore";
+            this.lblhighscore.Size = new System.Drawing.Size(178, 24);
+            this.lblhighscore.TabIndex = 5;
+            this.lblhighscore.Text = "High Score: 69";
+            this.lblhighscore.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblhighscore);
             this.Controls.Add(this.btnhighscore);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnStart);
@@ -137,7 +139,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnhighscore;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblhighscore;
     }
 }
 

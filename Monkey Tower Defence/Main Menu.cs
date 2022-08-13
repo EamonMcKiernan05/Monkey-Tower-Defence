@@ -28,12 +28,14 @@ namespace Monkey_Tower_Defence
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // start button
         {
-
+            Game_Map form = new Game_Map();
+            form.Show();
+            Hide();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e) // exit button
         {
             Application.Exit();
         }
@@ -52,7 +54,7 @@ namespace Monkey_Tower_Defence
         {
             using (StreamReader currentfile = new StreamReader("highscore.txt"))
             {
-                lblHighScore.Text = lblHighScore.Text + currentfile.ReadLine();
+                lblhighscore.Text = "High Score: " + currentfile.ReadLine();
             }
         }
 
