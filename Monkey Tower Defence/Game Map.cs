@@ -34,42 +34,44 @@ namespace Monkey_Tower_Defence
         {
             Application.Exit();
         }
-        int ADCount = 1;
+        int ADCount = 0;
         private void btnAD_Click(object sender, EventArgs e)
         {
             if (coins >= 50)
             {
+                ADCount++;
                 lblADCount.Text = ADCount.ToString();
                 coins = coins - 50;
-                ADCount++;
+
             }
             else
             {
                 
             }
         }
-
+        int CannonCount = 0;
         private void btnCannon_Click(object sender, EventArgs e)
         {
             if (coins >= 125)
             {
-                lblCannonCount.Text = ADCount.ToString();
+                CannonCount++;
+                lblCannonCount.Text = CannonCount.ToString();
                 coins = coins - 125;
-                ADCount++;
+
             }
             else
             {
 
             }
         }
-
+        int XBowCount = 0;
         private void btnXbow_Click(object sender, EventArgs e)
         {
             if (coins >= 275)
             {
-                lblXBowCount.Text = ADCount.ToString();
+                XBowCount++;
+                lblXBowCount.Text = XBowCount.ToString();
                 coins = coins - 275;
-                ADCount++;
             }
             else
             {
