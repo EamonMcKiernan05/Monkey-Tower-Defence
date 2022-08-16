@@ -78,5 +78,16 @@ namespace Monkey_Tower_Defence
 
             }
         }
+        int CastleHP = 1000;
+        private void imgTower_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) //BloonTimer
+        {
+            imgBloon.Left = imgBloon.Left + 5;
+
+        }
     }  
 }
